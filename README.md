@@ -1,5 +1,4 @@
-# Stock_Market_Index
-Analysis of Amazon and Facebook stock indices 
+# Analyse des indices boursiers d'Amazon et de Facebook 
 
 Ce projet d’étude consiste à analyser deux séries temporelles financières journalières de rendements
 qui sont respectivement Amazon et Meta (Facebook). L’objectif principal est de comprendre les
