@@ -1,5 +1,6 @@
-
+#------------------------------------------
 # Install packages with the commands below
+#------------------------------------------
 install.packages('PerformanceAnalytics')
 install.packages('quantmod')
 install.packages('MASS')
@@ -13,8 +14,9 @@ install.packages('carData')
 install.packages('xts')
 install.packages('lubridate')
 
-
+#------------------------------------------
 # Loading packages
+#------------------------------------------
 library(PerformanceAnalytics)
 library(quantmod)
 library(MASS)
@@ -94,7 +96,9 @@ tab_desc<-cbind(A,B)
 dat=cbind(AMZN.ret,FB.ret)
 summary(dat)
 
-#----------- Statistics tests -----------
+#------------------------------------------
+#              Statistics tests 
+#------------------------------------------
 # use Box.test from stats package
 Box.test(coredata(AMZN.ret^2), type="Ljung-Box", lag = 12)
 Box.test(coredata(FB.ret^2), type="Ljung-Box", lag = 12)
@@ -116,8 +120,9 @@ FB.arch11.fit = ugarchfit(spec=arch11.spec, data=FB.ret,
 AMAZN.arch11.fit
 FB.arch11.fit
 
-#-----------------
-# Asymmetric garch
+#---------------------
+#   Asymmetric garch
+#---------------------
 garch11.spec = ugarchspec(variance.model = list(garchOrder=c(1,1)),
                           mean.model = list(armaOrder=c(0,0)))
 AMZN.garch11.fit = ugarchfit(spec=garch11.spec, data=AMZN.ret, 
@@ -172,6 +177,7 @@ signbias(FB.garch11.fit)
 
 #--------------
 # Egarch model
+#--------------
 egarch11.spec = ugarchspec(variance.model=list(model="eGARCH", 
                                                garchOrder=c(1,1)),
                            mean.model=list(armaOrder=c(0,0)))
@@ -182,6 +188,7 @@ FB.egarch11.fit
 
 #----------------
 # GJR garch model
+#----------------
 gjrgarch11.spec = ugarchspec(variance.model=list(model="gjrGARCH",
                                                  garchOrder=c(1,1)),
                              mean.model=list(armaOrder=c(0,0)))
@@ -192,6 +199,7 @@ FB.gjrgarch11.fit
 
 #--------------
 # Aparch model
+#--------------
 aparch11.1.spec = ugarchspec(variance.model=list(model="apARCH",
                                                  garchOrder=c(1,1)), 
                              mean.model=list(armaOrder=c(0,0)), 
@@ -201,8 +209,9 @@ FB.aparch11.1.fit = ugarchfit(aparch11.1.spec, FB.ret)
 AMZN.aparch11.1.fit
 FB.aparch11.1.fit
 
-#---------------------
+#----------------------
 # Information criteria
+#----------------------
 # AMZN
 nic.garch11 = newsimpact(AMZN.garch11.fit)
 nic.egarch11 = newsimpact(AMZN.egarch11.fit)
@@ -285,8 +294,8 @@ plot(nic.aparch11.1$zx, type="l", lwd=2, col="blue", main="APARCH(1,1,1)",
      nic.aparch11.1$zy, ylab=nic.aparch11.1$yexpr, xlab=nic.aparch11.1$xexpr)
 
 #**********************************************************************************
-#**************Estimation of asymmetric models (ApARCH and EGARCH)*****************
-
+#         Estimation of asymmetric models (ApARCH and EGARCH)
+#**********************************************************************************
 ##### garch with non-normal errors
 par(mfrow=c(1,1))
 # Aparch
@@ -369,6 +378,7 @@ legend(x="topright", legend=c("FB"),lwd=2, lty = "solid")
 
 #**************************************************************************
 # fit skewed t :  
+#**************************************************************************
 # Aparch
 aparch11.1.st.spec = ugarchspec(variance.model = list(model="apARCH",
                                                       garchOrder=c(1,1)), 
@@ -393,6 +403,7 @@ legend(x="topleft", legend=c("fit skewed t FB"),lwd=2, lty = "solid")
 
 #************************************************************************
 ## Plot forecasts from competing models : Forecasting for sigma (Monthly)
+#************************************************************************
 #***AMZN (mensuel) ***
 par(mfrow=c(1,2))
 AMZN.egarch11.fcst = ugarchforecast(AMZN.egarch11.fit, n.ahead=250)
@@ -419,9 +430,9 @@ plot(FB.aparch11.1.fcst, which = 1)
 legend(x="topright", legend=c("Aparch(1,1)"),lwd=2, lty = "solid")
 
 
-###########################################################
-#*****************************
+#*****************************************************************
 # extract volatility forecasts
+#*****************************************************************
 #***AMZN***
 AMZN.egarch11.sigma = as.data.frame(AMZN.egarch11.fcst)$sigma
 AMZN.egarch11.t.sigma = as.data.frame(AMZN.egarch11.t.fcst)$sigma
@@ -445,8 +456,9 @@ ymin = min(FB.egarch11.sigma,FB.egarch11.t.sigma,FB.aparch11.1.sigma,
            FB.aparch11.1.t.sigma)
 
 
-#---------
-# Plot ts
+#------------
+#   Plot ts
+#------------
 #***AMZN***
 plot.ts(AMZN.egarch11.sigma, main="Volatility Forecasts",
         ylim=c(ymin,ymax), col="black", 
@@ -490,8 +502,9 @@ FB.aparch11.1.t.fit = ugarchfit(spec=aparch11.1.t.spec, data=FB.ret,
                                 out.sample=100)
 
 
-#*************************************************
-# compare persistence and unconditional variance
+#****************************************************
+#   compare persistence and unconditional variance
+#****************************************************
 c.mat = matrix(0, 2, 2)
 colnames(c.mat) = c("Persistence", "E[sig(t)]")
 rownames(c.mat) = c("EGARCH-n", "EGARCH-t", "APARCH-n","APARCH-t")
