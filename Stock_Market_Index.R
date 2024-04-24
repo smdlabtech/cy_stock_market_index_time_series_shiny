@@ -1,18 +1,19 @@
 #------------------------------------------
 # Install packages with the commands below
 #------------------------------------------
-install.packages('PerformanceAnalytics')
-install.packages('quantmod')
-install.packages('MASS')
-install.packages('mvtnorm')
-install.packages('mnormt')
-install.packages('rugarch')
-install.packages('car')
-install.packages('FinTS')
-install.packages('zoo')
-install.packages('carData')
-install.packages('xts')
-install.packages('lubridate')
+
+# install.packages('PerformanceAnalytics')
+# install.packages('quantmod')
+# install.packages('MASS')
+# install.packages('mvtnorm')
+# install.packages('mnormt')
+# install.packages('rugarch')
+# install.packages('car')
+# install.packages('FinTS')
+# install.packages('zoo')
+# install.packages('carData')
+# install.packages('xts')
+# install.packages('lubridate')
 
 #------------------------------------------
 # Loading packages
