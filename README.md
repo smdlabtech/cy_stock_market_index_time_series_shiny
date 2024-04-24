@@ -1,7 +1,7 @@
-# Analyse des indices boursiers d'Amazon et de Facebook 
+# Analysis of Amazon and Facebook stock indices 
 
-Ce projet d’étude consistait à analyser deux séries temporelles financières journalières de rendements qui sont respectivement **Amazon** et **Meta** (Facebook).  
-L’objectif principal est de comprendre les raisons économiques de leur positionnement dans le marché mondial actuel et plus intéressant encore est de chercher à trouver s’il éventuels raisons ou situations économiques qui relient ces deux géants des **GAFAM**.  
+This research project consisted in analyzing two daily financial time series of returns which are respectively **Amazon** and **Meta** (Facebook).  
+The main objective is to understand the economic reasons for their positioning in the current global market and, more interestingly, to find out whether there are any economic reasons or situations linking these two **GAFAM** giants.  
 
-Dans la suite de l’analyse, nous présentons des prédictions de l’évolution de ces séries financières
-entre le 01/06/2012 et 01/12/2021.
+In the following analysis, we present predictions for the evolution of these financial series
+between 01/06/2012 and 01/12/2021.
