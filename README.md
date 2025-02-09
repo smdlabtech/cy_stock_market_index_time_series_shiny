@@ -89,4 +89,4 @@ These companies belong to **GAFAM** (Google, Apple, Facebook, Amazon, Microsoft)
 📢 **For questions or collaboration, contact:** [@smdlabtech](https://github.com/smdlabtech)  
 
 ---
-> **smdlabtech - 2024** - **Stock Market Analysis**
+> **smdlabtech : **Stock Market Analysis**
