@@ -8,9 +8,9 @@
 ---
 
 <p align="left"> 
-    <img width="150" height="150" src="assets/img/logo_shiny.png">
-    <img width="150" height="150" src="assets/img/amzn.png">
-    <img width="150" height="150" src="assets/img/Meta_Inc_logo.jpg">
+    <img width="100" height="100" src="assets/img/logo_shiny.png">
+    <img width="150" height="100" src="assets/img/amzn.png">
+    <img width="150" height="100" src="assets/img/Meta_Inc_logo.jpg">
 </p>  
 
 ---
