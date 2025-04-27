@@ -5,15 +5,11 @@
 ![Finance](https://img.shields.io/badge/Finance-Stock%20Market-green?style=flat&logo=yahoo)
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Powered-orange?style=flat&logo=ai)  
 
----
-
 <p align="left"> 
     <img width="100" height="100" src="assets/img/logo_shiny.png">
     <img width="150" height="100" src="assets/img/amzn.png">
     <img width="150" height="100" src="assets/img/Meta_Inc_logo.jpg">
 </p>  
-
----
 
 ## 📌 Project Overview  
 
@@ -30,8 +26,6 @@ These companies belong to **GAFAM** (Google, Apple, Facebook, Amazon, Microsoft)
 - Evaluating **market positioning**.  
 - Assessing **long-term investment strategies**.  
 - Identifying economic or financial **trends linking these two giants**.  
-
----
 
 ### 📊 Methodology  
 
@@ -51,15 +45,11 @@ These companies belong to **GAFAM** (Google, Apple, Facebook, Amazon, Microsoft)
    - Identifying cross-influences between Amazon and Meta.  
    - Evaluating market conditions impacting their stock prices.  
 
----
-
 ### 📈 Results & Predictions  
 
 🔹 **Amazon & Meta stock price correlations over time**  
 🔹 **Forecasts for stock trends (next 12 months)**  
 🔹 **Economic insights on how tech giants move together in financial markets**  
-
----
 
 ### 📌 Technologies Used  
 
@@ -68,15 +58,12 @@ These companies belong to **GAFAM** (Google, Apple, Facebook, Amazon, Microsoft)
 - 📈 **Yahoo Finance API**: Stock market data.  
 - 📡 **Machine Learning**: ARIMA, LSTM, Random Forest.  
 
----
-
 ### 🚀 Future Improvements  
 
 ✅ Incorporating **macroeconomic indicators** (inflation, interest rates).  
 ✅ Extending the dataset to include **Google, Apple, and Microsoft**.  
 ✅ Developing a **real-time stock analysis dashboard** using R Shiny.  
 
----
 
 ### 📌 References  
 
@@ -84,9 +71,6 @@ These companies belong to **GAFAM** (Google, Apple, Facebook, Amazon, Microsoft)
 📚 **Time Series Forecasting**: [ARIMA Guide](https://otexts.com/fpp3/arima.html)  
 📘 **Machine Learning in Finance**: [Scikit-Learn](https://scikit-learn.org/stable/)  
 
----
+📢 For questions or collaboration, contact : [@smdlabtech](https://github.com/smdlabtech)  
 
-📢 **For questions or collaboration, contact:** [@smdlabtech](https://github.com/smdlabtech)  
-
----
 > By **smdlabtech :** *Stock Market Analysis*
